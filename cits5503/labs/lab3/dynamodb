@@ -1,0 +1,1 @@
+aws dynamodb create-table --table-name=MyTable --attribute-definitions AttributeName=userId,AttributeType=S AttributeName=elementName,AttributeType=S --key-schema AttributeName=userId,KeyType=HASH AttributeName=elementName,KeyType=RANGE --provisioned-throughput ReadCapacityUnits=10,WriteCapacityUnits=10 --endpoint-url=http://127.0.0.1:8000
